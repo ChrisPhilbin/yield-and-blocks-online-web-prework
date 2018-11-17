@@ -3,7 +3,7 @@ def hello_t(array)
 
   while i < array.length
     i = i + 1
-    yield array[i]
+    yield(array[i])
   end
 end
 
@@ -12,4 +12,3 @@ hello_t(["Tim", "Tom", "Jim"]) do |name|
     puts "Hi, #{name}"
   end
 end
-
